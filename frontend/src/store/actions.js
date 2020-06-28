@@ -11,7 +11,11 @@ import {
 const uploadFiles = (dispatch) => (filesList) => {
   dispatch({ type: CLEAR_FILES });
 
-  for (const file of filesList) {
+  const filteredFiles = Object.values(filesList).filter(
+    ({ type }) => type === "text/plain"
+  );
+
+  for (const file of filteredFiles) {
     file.text().then((text) => {
       const value = text.split(/\r?\n/).filter(Boolean);
 
