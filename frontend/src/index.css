@@ -57,6 +57,32 @@ button {
   outline-offset: -1.25rem;
 }
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  max-width: 43.75rem;
+  margin: 0 auto;
+}
+
+.status-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 7.5rem;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 0.25rem solid #88d9f3;
+}
+
+.controls-wrapper {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem 1.25rem;
+  border-bottom: 0.25rem solid #88d9f3;
+}
+
 .files-list {
   flex: 1 1 auto;
   overflow-y: auto;
