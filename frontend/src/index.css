@@ -75,3 +75,7 @@ button {
 .list-item:nth-child(2n) {
   background-color: #c3f7eb;
 }
+
+.status-list {
+  padding: 1.25rem 0 1.25rem 2.5rem;
+}
